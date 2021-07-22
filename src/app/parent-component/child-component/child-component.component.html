@@ -1,0 +1,5 @@
+
+<div class="input-group mb-3 div-container">
+    <input type="text" class="form-control" [(ngModel)]="newFriend" placeholder="Enter your friend's name" (keyup)="onKeyPressed($event)">
+    <button class="btn btn-outline-primary" type="button" id="button-addon2" (click)="addNewFriend()" [disabled]="!newFriend.length">Add</button>
+</div>
